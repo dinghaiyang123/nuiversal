@@ -1,14 +1,14 @@
 import request from '../utils/request'
 
-// const getUserInfo = () =>{
-// return request({url : '/admin/getUserInfo', method: 'GET'})
-// }
-// export default {
-//   getUserInfo
-// }
+/**
+ * 登录接口
+ * @param {*} data
+ * @returns
+ */
 const login = (data) => {
   return request({ url: '/sys/login', method: 'POST', data })
 }
+
 export default {
   login
 }

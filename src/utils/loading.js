@@ -9,7 +9,7 @@ const loading = {
     if (this.loadingInstance === null) {
       this.loadingInstance = ElLoading.service({
         target: 'body',
-        background: 'rgba(0,0,0,0,4)'
+        background: 'rgba(0,0,0,0.4)'
       })
     }
   },
@@ -21,4 +21,5 @@ const loading = {
     }
   }
 }
+
 export default loading
